@@ -1,5 +1,5 @@
 {% set name = "uftp" %}
-{% set version = "4.10.1" %}
+{% set version = "4.10.2" %}
 
 package:
   name: {{ name }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: http://sourceforge.net/projects/uftp-multicast/files/source-tar/{{ name }}-{{ version }}.tar.gz
-  sha256: 903353febf1b88f701198d956a60cec3d2be3cc251561a678061761aec6622f6
+  sha256: ecab6ab07fe0ebaf7bfe35d99fe2da28ede3ddc6f21f825d3b259cf171258505
   patches:
     - 0001-install-to-bin.patch
 
 build:
   number: 0
-  skip: True  # [win]
+  skip: true  # [win]
 
 requirements:
   build:
@@ -34,7 +34,7 @@ about:
   home: http://uftp-multicast.sourceforge.net/
   license: GPL-3.0+
   license_file: LICENSE.txt
-  summary: 'Encrypted UDP based FTP with multicast'
+  summary: Encrypted UDP based FTP with multicast
 
 extra:
   recipe-maintainers:
