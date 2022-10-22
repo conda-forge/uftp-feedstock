@@ -18,9 +18,8 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - make
   host:
-    - openssl
-  run:
     - openssl
 
 test:
