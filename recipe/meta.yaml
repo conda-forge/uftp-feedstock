@@ -1,5 +1,5 @@
 {% set name = "uftp" %}
-{% set version = "5.0.2" %}
+{% set version = "5.0.3" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: http://sourceforge.net/projects/uftp-multicast/files/source-tar/{{ name }}-{{ version }}.tar.gz
-  sha256: 57c12a6ae59942535fb5e620381aedeb17d50009ee71f236427ce237a46c0b14
+  sha256: cb8668c19b1f10bc63a16ffa893e205dc3ec86361037d477d8003260ebc40080
   patches:
     - 0001-install-to-bin.patch
 
